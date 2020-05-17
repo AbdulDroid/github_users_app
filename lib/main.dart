@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'https://api.github.com/users?language=flutter',
       headers: {
         HttpHeaders.authorizationHeader:
-            'token f52b085594b2893d7601e533e98a606f9a7bce14'
+            'token [INSERT OAUTH TOKEN HERE]'
       },
     );
 
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
       for (var url in urls.userUrls) {
         final userRes = await http.get(url, headers: {
           HttpHeaders.authorizationHeader:
-              'token f52b085594b2893d7601e533e98a606f9a7bce14'
+              'token [INSERT OAUTH TOKEN HERE]'
         });
         if (userRes.statusCode == 200) {
           userList.add(User.fromJson(json.decode(userRes.body)));
