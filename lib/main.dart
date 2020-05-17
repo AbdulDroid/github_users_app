@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: createColor(Color(0xff2F3035)),
         fontFamily: GoogleFonts.nunito().fontFamily,
         textTheme: TextTheme(
-          headline: TextStyle(
+          headline5: TextStyle(
             fontSize: 34.0,
             fontWeight: FontWeight.w800,
           ),
-          title: TextStyle(
+          headline6: TextStyle(
               fontSize: 18.0, fontWeight: FontWeight.w600, color: Colors.black),
         ),
       ),
